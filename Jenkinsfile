@@ -3,17 +3,17 @@ pipeline {
      stages {
       stage ('Compile') {
             steps {
-                sh 'mvn compile'
+                echo 'compile'
                 }
             }    
         stage ('Package') {
             steps {
-                sh 'mvn package'
+                echo 'package'
                 }
             }
         stage ('Install') {
             steps {
-                sh 'mvn install'
+                echo 'install'
                 }
             }
         }
