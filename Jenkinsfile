@@ -11,9 +11,9 @@ credentialsId: 'e8d0d800-ea2d-43eb-a937-ab0a484cace8',
 url: 'https://github.com/navneetguraya/demo.git'
 }
 }
-stage ('Clean') {
+stage ('build') {
 steps {
-sh 'mvn clean'
+sh 'mvn build'
 }
 }
 stage ('Compile') {
