@@ -13,7 +13,7 @@ url: 'https://github.com/navneetguraya/demo.git'
 }
 stage ('build') {
 steps {
-sh 'mvn build'
+sh 'mvn clean install'
 }
 }
 stage ('Compile') {
